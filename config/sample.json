@@ -1,0 +1,69 @@
+{
+  "cron": {
+    "jobs": [
+      {
+        "name": "send",
+        "config": "0 0/1 * * * ?",
+        "url": "/services/jobs/send",
+        "enabled": true
+      }
+    ]
+  },
+  "settings": {
+    "public": {},
+    "unsubscribe-link": "http://localhost:9000/unsubscribe",
+    "send-limit": 10
+  },
+  "cors": [{
+    "origins": ["*"],
+    "enabled": true
+  }],
+  "smtp": {
+    "default": {
+      "enabled": true,
+      "host": "YOUR.MAIL.HOST.COM",
+      "port": 465,
+      "ssl": true,
+      "from": "YOUR.FROM@E-MAIL.COM",
+      "username": "YOUR@E-MAIL.COM",
+      "password": "YOUR-PASSWORD"
+    }
+  },
+  "name": "maibery",
+  "setup": {
+    "schema": {
+      "execution": true,
+      "auto_create": true
+    },
+    "scripts": {"execution": true},
+    "enabled": true
+  },
+  "language": "en_GB",
+  "firebase": {
+    "app_name": "",
+    "database_url": "",
+    "key_file": "",
+    "listener_secret": ""
+  },
+  "locale": "en_GB",
+  "remote": {},
+  "commands": [{
+    "path": "ui",
+    "install": "npm install --force",
+    "command": "npm run watch",
+    "enabled": true
+  }, {
+    "path": "website",
+    "install": "npm install --force",
+    "command": "npm start",
+    "enabled": true
+  }],
+  "db": {"default": {
+    "password": "",
+    "engine": "h2",
+    "port": "",
+    "host": "",
+    "name": "maibery",
+    "username": ""
+  }}
+}

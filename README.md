@@ -2,13 +2,13 @@
 
 # maibery
 
-Moderated and multi-room web chat.
+This is an e-mail delivery system that manages to send massive emails.
 
 ## Installation
 
 The requirements and the server, easy-peasy:
 
-- [Netuno Platform Install](https://doc.netuno.org/docs/en/installation/);
+- [Netuno Platform Install](https://doc.netuno.org/docs/en/installation/)
 
 #### Automatic
 
@@ -20,7 +20,7 @@ In your terminal, execute the command below into the Netuno root folder to insta
 
 > This requires GIT command.
 
-Then start the Netuno with the Pluto application:
+Then start the Netuno with the Maibery application:
 
 ```
 ./netuno server app=maibery
@@ -59,7 +59,7 @@ Now just need to start the Netuno Server, but with the Plunto Web Chat as the ma
 
 ## Local Development Links
 
-After starting the Pluto application and finished the NPM installs, these links below will be available.
+After starting the Maibery application and finished the NPM installs, these links below will be available.
 
 Backoffice:
  - http://localhost:9000/
